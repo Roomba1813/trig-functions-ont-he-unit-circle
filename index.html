@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <button onclick = "onstuff(0)" id="sinbut" style = "position:absolute;top:10;left:410px">sin(θ)</button>
+    <button onclick = "onstuff(1)" id="cosbut" style = "position:absolute;top:55px ;left:410px">cos(θ)</button>
+    <button onclick = "onstuff(2)" id="tanbut" style = "position:absolute;top:90px ;left:410px">tan(θ) & sec(θ)</button>
+    <!-- <button onclick = "onstuff(3)" id="secbut" style = "position:absolute;top:130px ;left:410px">sec(θ)</button> -->
+    <button onclick = "onstuff(4)" id="cscbut" style = "position:absolute;top:130px ;left:410px">csc(θ)</button>
+    <button onclick = "onstuff(5)" id="cotbut" style = "position:absolute;top:170px ;left:410px">cot(θ)</button>
+    
+		<button onclick = "identities(1)" id="py1but" style = "position:absolute;top:10px ;left:470px">Pythagorean Identity #1</button>
+    <h1 id = "py1text" style = "position:absolute;font-size:100%;top:20px;left:470px"></h1>
+		<button onclick = "identities(2)" id="py2but" style = "position:absolute;top:50px ;left:470px">Pythagorean Identity #2</button>
+		<h1 id = "py2text" style = "position:absolute;font-size:100%;top:60px;left:470px"></h1>
+		<button onclick = "identities(3)" id="py3but" style = "position:absolute;top:90px ;left:520px">Pythagorean Identity #3</button>
+		<h1 id = "py3text" style = "position:absolute;font-size:100%;top:100px;left:470px"></h1>
+		
+		<button id = "whytan" onclick = "ratio(1)" style = "position:absolute;top:130px ;left:470px">tan(θ) = sin(θ)/cos(θ)</button>
+		<h1 id = "tantext" style = "position:absolute;font-size:100%;top:140px;left:470px"></h1>
+		<button id = "whysec" onclick = "ratio(2)" style = "position:absolute;top:170px ;left:470px">sec(θ) = 1/cos(θ)</button>
+		<h1 id = "sectext" style = "position:absolute;font-size:100%;top:180px;left:470px"></h1>
+    <button id = "whycot" onclick = "ratio(3)" style = "position:absolute;top:210px ;left:470px">cot(θ) = 1/tan(θ)</button>
+		<h1 id = "cottext" style = "position:absolute;font-size:100%;top:220px;left:470px"></h1>
+  </body>
+</html>
