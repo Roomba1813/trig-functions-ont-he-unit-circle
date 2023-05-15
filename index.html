@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <!-- <audio autoplay>
+      <source src = "HOME.mp3" type = "audio/mpeg">
+   </audio> -->
+    <div id="thebuttons">
+    <button onclick = "onstuff(0)" id="sinbut" style = "position:absolute;top:410px ;left:5px">sin(θ)</button>
+    <button onclick = "onstuff(1)" id="cosbut" style = "position:absolute;top:450px ;left:5px">cos(θ)</button>
+    <button onclick = "onstuff(2)" id="tanbut" style = "position:absolute;top:490px ;left:5px">tan(θ) & sec(θ)</button>
+    <!-- <button onclick = "onstuff(3)" id="secbut" style = "position:absolute;top:130px ;left:410px">sec(θ)</button> -->
+    <button onclick = "onstuff(4)" id="cscbut" style = "position:absolute;top:530px ;left:5px">csc(θ)</button>
+    <button onclick = "onstuff(5)" id="cotbut" style = "position:absolute;top:570px ;left:5px">cot(θ)</button>
+    <button onclick = "onstuff(7)" id="hidebut" style = "position:absolute;top:610px ;left:5px">show all</button>
+    <button onclick = "onstuff(6)" id="hidebut" style = "position:absolute;top:650px ;left:5px">hide all</button>
+    
+		<button onclick = "identities(1)" id="py1but" style = "position:absolute;top:410px ;left:70px">Pythagorean Identity #1</button>
+    <h1 id = "py1text" style = "position:absolute;font-size:100%;top:445px;left:82.5px"></h1>
+		<button onclick = "identities(2)" id="py2but" style = "position:absolute;top:410px ;left:240px">Pythagorean Identity #2</button>
+		<h1 id = "py2text" style = "position:absolute;font-size:100%;top:445px;left:252.5px"></h1>
+		<button onclick = "identities(3)" id="py3but" style = "position:absolute;top:410px ;left:410px">Pythagorean Identity #3</button>
+		<h1 id = "py3text" style = "position:absolute;font-size:100%;top:445px;left:422.5px"></h1>
+		
+		<button id = "whytan" onclick = "ratio(1)" style = "position:absolute;top:490px ;left:120px">tan(θ) = sin(θ)/cos(θ)</button>
+		<h1 id = "tantext" style = "position:absolute;font-size:100%;top:525px;left:70px"></h1>
+		<button id = "whysec" onclick = "ratio(2)" style = "position:absolute;top:490px ;left:270px">sec(θ) = 1/cos(θ)</button>
+		<!-- <h1 id = "sectext" style = "position:absolute;font-size:100%;top:525px;left:70px"></h1> -->
+    <button id = "whycot" onclick = "ratio(4)" style = "position:absolute;top:490px ;left:397px">csc(θ) = 1/sin(θ)</button>
+    <button id = "whycot" onclick = "ratio(3)" style = "position:absolute;top:490px ;left:520px">cot(θ) = 1/tan(θ)</button>
+		<!-- <h1 id = "cottext" style = "position:absolute;font-size:100%;top:525px;left:70px"></h1> -->
+
+  </div>
+
+    <!-- <button id = "studymode" onclick = "study()"style = "position:absolute;font-size:100%;top:10px;left:1290px">study mode</button> -->
+    <button id = "exitstudymode" onclick = "exitstudy()"style = "position:absolute;font-size:100%;top:10px;left:1305px">exit study</button>
+
+    <button id = "start" onclick = "startpause(0)"style = "position:absolute;font-size:100%;top:10px;left:410px">start</button>
+    <button id = "pause" onclick = "startpause(1)"style = "position:absolute;font-size:100%;top:10px;left:472px">pause</button>
+    <button id = "speedup" onclick = "startpause(2)"style = "position:absolute;font-size:100%;top:50px;left:410px">speedup</button>
+    <button id = "speeddown" onclick = "startpause(3)"style = "position:absolute;font-size:100%;top:50px;left:505px">speeddown</button>
+    <h1 id="thetaspeed" style = "position:absolute;font-size:100%;top:90px;left:410px"></h1>
+    <h1 id="thetaangle" style = "position:absolute;font-size:100%;top:120px;left:410px"></h1>
+
+
+  </body>
+</html>
